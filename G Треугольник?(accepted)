@@ -1,0 +1,14 @@
+angles=[int(a) for a in input().split(' ')]
+checker=False
+if len(angles)==3:
+  if sum(angles)==180:
+    for angs in angles:
+      if angs>0:
+        checker=True
+      else:
+        checker=False
+        break
+if checker==True:
+  print('Yes')
+else:
+  print('No')
