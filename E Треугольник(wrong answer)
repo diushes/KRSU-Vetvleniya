@@ -1,0 +1,17 @@
+sides=[a for a in input().split(' ')]
+checker=False
+for i in  range(3):
+
+  if (sides[i].isdigit()):
+    sides[i]=int(sides[i])
+    checker=True
+  else:
+    checker=False
+    break
+
+if checker==True:
+  if len(sides)==3:
+    if sides[0]+sides[1]>sides[2] and sides[1]+sides[2]>sides[0] and sides[0]+sides[2]>sides[1]:
+      print('Yes')
+    else:
+      print('No')
