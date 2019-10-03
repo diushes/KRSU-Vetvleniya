@@ -1,0 +1,12 @@
+age=int(input())
+let=range(12,15)
+let2=range(112,115)
+if age>0 and age<120:
+  
+  if age==1  or str(age)[1]==1 and age!=11 and age!=111 :
+    print('Вам',age,'год.')
+  elif age<100 and age not in let and str(age)[1] in'234' or age>100 and age not in let2 and str(age)[2] in'234':
+    print('Вам',age,'года.')
+  else:
+    print('Вам',age,'лет.')
+#krsu.olymp task20
