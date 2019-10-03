@@ -1,0 +1,33 @@
+date=[int(a) for a in input().split(' ')]
+#day_week=(day+monthcode+yearcode)%7
+
+a=[1,10]
+b=[5]
+c=[8]
+d=[2,3,11]
+e=[6]
+f=[12,9]
+g=[4,7]
+checker=False
+if  len(date)==2 and date[0]>=1 and date[0]<=31 and date[1]>=1 and date[1]<=12:
+  checker=True
+  if date[1] in a:
+    code=1
+  elif date[1] in b:
+    code=2
+  elif date[1] in c:
+    code=3
+  elif date[1] in d:
+    code=4
+  elif date[1] in e:
+    code=5
+  elif date[1] in f:
+    code=6
+  elif date[1] in g:
+    code=0
+
+#yearcode=5
+if checker==True:
+  dayw=(date[0]+code+5)%7
+  d={0:'Saturday',1:'Sunday',2:'Monday',3:'Tuesday',4:'Wednesday',5:'Thursday',6:'Friday'}
+  print(d[dayw])
