@@ -1,0 +1,8 @@
+
+inp=[int(a) for a in input().split(' ')]
+count=1
+for i in range(3):
+  am=inp.count(inp[i])
+  if am>1:
+    count=am
+print(count)
